@@ -1,6 +1,17 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
-}
+  const arrOfNums = new Set()
+  for(const number of array) {
+    const difference = target - number
+
+  if (arrOfNums.has(difference)) return true
+
+  arrOfNums.add(number)
+  }
+  return false
+ }
+
+
 
 /* 
   Write the Big O time complexity of your function here
